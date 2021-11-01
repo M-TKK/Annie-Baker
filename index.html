@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="main.js"></script>
+    <title>Annie Baker</title>
+</head>
+<body>
+    
+    <div id="master-container">
+
+        <nav class="a-nav" id="a-main-nav">
+
+            <div class="nav-container">
+    
+                <div class="a-nav-left">
+                    <a href="index.html" class="light"><img src="/img/AB-Short-white.svg" alt="Annie Baker Logo"></a>
+                    <a href="index.html" class="dark"><img src="/img/AB-Short.svg" alt="Annie Baker Logo"></a>
+                </div>
+    
+                <div class="a-nav-right">
+                    <div class="mobileBtn"><i class="fas fa-bars" id="mobile-menu"></i></div>
+                    <ul class="nav-menu">
+                        <li><i class="fas fa-times" id="closeBtn"></i></li>   
+                        <li><a href="/about.html">about</a></li>
+                        <li><a href="/blog.html">blog</a></li>
+                        <li><a href="/books.html">books</a></li>
+                        <li><a href="/contact.html">contact</a></li>
+                    </ul>
+                </div>
+    
+            </div>
+        </nav>
+
+        <div class="book-info">
+
+            <div class="book-img">
+                <img src="/img/Book-Mockup.png" alt="">
+            </div>
+
+            <div class="book-text">
+                <h2>Echoes From the Soul</h2>
+                <p>Echoes from the Soul, is an insightful collection of poetry that speaks of experiences, which connects us all. Themes of love, loss, hope and nature convey the universality of emotions and the highs and lows in life we all face. Beautiful illustrations resonate with the author's poignant themes, making this book a meaningful keepsake and gift for all the beautiful and receptive souls of the world.</p>
+                <a href="/books.html"><button>buy now</button></a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container about-container" id="secondary-container">
+
+        <div class="about">
+
+            <div class="about-text">
+                <img src="/img/AB-Long.svg" class="heading-img" alt="Annie Baker Logo">
+                <p>I started writing as a teenager to express my most inner thoughts and emotions, unable to share them with those around me. As I retreated into my inner self, I found solace in nature and became aware of an innate energy that flowed through life and connected us all. I hope you can feel some inkling of it resonating through my poems. <a href="/about.html">read more...</a></p>
+            </div>
+
+
+        </div>
+
+        <div class="latest-posts">
+            <h1>latest posts</h1>
+            <div class="post-container">
+
+                <div class="blog-post1" id="blog-post">
+                    <img src="/img/CherryBlossoms.jpg" alt="">
+                    <div class="blog-text">
+                        <h3>Haiku</h3>
+                        <h5>19th January 2021</h5>
+                        <p>This week I’d like to introduce you to Haiku, a classic Japanese form of short poetry, which celebrates nature and aspects of life. They are little snapshots of moments that vary from serious reflections and images to the whimsical and uplifting......</p>
+                        <a href="/blog-posts/haiku.html"><button>view post</button></a>
+                    </div>
+                </div>
+
+                <div class="blog-post2" id="blog-post">
+                    <img src="/img/pexels-creative-vix-9754.jpg" alt="">
+                    <div class="blog-text">
+                        <h3>Cadence is a dance</h3>
+                        <h5>9th February 2021</h5>
+                        <p>By definition, cadence is the rhythmic flow of a sequence of words or sounds. For me, it is a neglected aspect of writing. An important, almost alchemical element. The correct cadence in your poem or book can leave your reader feeling satisfied...</p>
+                        <a href="/blog-posts/cadence.html"><button>view post</button></a>
+                    </div>
+                </div>
+
+                <div class="blog-post3" id="blog-post">
+                    <img src="/img/page43.jpg" alt="">
+                    <div class="blog-text">
+                        <h3>Coming Soon</h3>
+                        <h5>19th January 2021</h5>
+                        <p>This week I’d like to introduce you to Haiku, a classic Japanese form of short poetry, which celebrates nature and aspects of life. They are little snapshots of moments that vary from serious reflections and images to the whimsical and uplifting.</p>
+                        <a href=""><button>Coming Soon</button></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="container contact-container" id="contact-container">
+        <div class="contact">
+            <ul>
+                <li><a href="https://www.facebook.com/Annie-Baker-103719231690660"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/anniebaker.write/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/AnnieBa82330837"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+            <p>Copyright © 2021 Annie Baker. All rights reserved.</p>
+        </div>
+    </div>
+
+<script>
+    let resizeTimer;
+window.addEventListener("resize", () => {
+    document.body.classList.add("stopper");
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+        document.body.classList.remove("stopper");
+    }, 400);
+});
+</script>
+
+<script src="main.js"></script>
+<script src="https://kit.fontawesome.com/ca0cafecc7.js" crossorigin="anonymous"></script>
+</body>
+</html>
